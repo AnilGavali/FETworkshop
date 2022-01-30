@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*body{
+    background-image: url(/images/bookshelf-large.jpg);
+}*/
+header{
+    position: absolute;
+    background-color: yellowgreen;
+    width: 100%;
+    margin: 0px 10px 0px 0px;
+}
+/*
+.nav-bars{
+    position: absolute;
+    left: 60px;
+    top: 60px;
+
+}
+.mid-section{
+    color:wheat;
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    left: 350px;
+    top: 40px;
+    background-color: rgb(78, 60, 95);
+    margin: auto;
+}
+.add-book{
+    color:wheat;
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    left: 350px;
+    top: 40px;
+    background-color: rgb(78, 60, 95);
+    margin: auto;
+}
+
+
+.nav-bars li{
+    display:block;
+    list-style: none;
+    padding: 15px;
+    margin: 10px;
+    background-color: blueviolet;
+}
+.nav-bars a{
+    text-decoration: none;
+    padding: 40px;
+    margin: 20px;
+    
+}
+
+.aside-bar{
+    position: absolute;
+    right: 0px;
+    height: 900%;
+    width: 30%;
+    top: 40px;
+}*/
+footer{
+    position: absolute;
+    background-color: yellowgreen;
+    width: 100%;
+    margin: 0px 10px 0px 0px;
+    bottom: 0px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
+}
+.col1{
+    flex-basis: 33%;
+    background-color: wheat;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    position: relative;
+    top: 40px;
+    transition: 1s;
+    background-image:url(/images/bookst.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 100px 0px;
+}
+.col1:hover{
+    box-shadow: 0 0 20px 0px;
+}
+input{
+    margin: 20px;
+    background-color: black;
+    color:red
+}
+button{
+    background-color: rgb(182, 175, 169);
+    border-radius: 10px;
+}
+.book-list li{
+    color:rgb(88, 74, 37);
+    font-size: 20px;
+    list-style: none;
+    padding: 20px;
+    font-weight: 800;
+}
+table{
+    border-collapse: collapse;
+} 
+table.list{
+    width:100%;
+}
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}

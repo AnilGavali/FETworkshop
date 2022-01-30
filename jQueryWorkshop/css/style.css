@@ -1,0 +1,49 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#1572a1 ;
+}
+
+.form-box{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    justify-content: center;
+}
+
+.btn-login,.btn-submit{
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: flex;
+    cursor: pointer;
+}
+
+.register{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font: bold;
+}
+
+#firstname ,#lastname,#address,#pincode{
+    width: 200px;
+    padding: 10px;
+    
+}
+.labels{
+    padding: 30px;
+}
+.city{
+    height: 30px;
+}
+.city-code{
+    display: flex;
+    justify-content: space-between;
+}

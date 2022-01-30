@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <form action="" class="register">
+        <label class="labels" for="firstname">Enter Lirstname:</label>
+        <input id="firstname" type="text" onkeypress="return (event.charCode > 64 && 
+        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"><br><br>
+
+        <label class="labels" for="lastname">Enter Lastname:</label>
+        <input type="text" id="lastname" name="lastname" class="lastname" maxlength="7" onkeypress="return (event.charCode > 64 && 
+        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"><br><br>
+
+        <label class="labels" for="address">Enter Address:</label>
+        <input type="text" name="address" id="address" class="address" maxlength="50"><br><br>
+        
+        <div class="city-code">
+            <label class="labels" for="city">enter city:</label>
+            <input type="text" name="city" class="city" id="city">
+            <textarea name="pincode" id="pincode" cols="1" rows="1"></textarea><br><br>
+        </div>
+        <label class="labels" for="birthdate">enter Birthdate:</label>
+        <input type="date" name="birthdate" id="birthdate" max="2000-12-31"><br><br>
+        <button class="btn-submit" id="btn-submit" type="submit">SUBMIT</button>
+        <div>
+
+        </div>
+    </form>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
