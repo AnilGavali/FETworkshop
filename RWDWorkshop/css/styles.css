@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "rubik", sans-serif;
+  color: #121212;
+  font-weight: 400;
+  background: #F3C5C5;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3rem;
+  background: #faeee7;
+}
+
+.footer-company h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: 2rem;
+  text-decoration: underline;
+}
+
+.footer-company p {
+  font-size: 1.8rem;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 30rem;
+  font-size: large;
+}
+
+@media all and (max-width: 100rem) {
+  .header {
+    background-image: url(/images/header.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.header-zomato {
+  color: #4C0027;
+  text-decoration: none;
+}
+
+.header-nav-link {
+  color: #121212;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+
+.header-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 3.2rem;
+}
+
+.main-sections {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background: #f3c5c5;
+}
+
+@media (max-width: 37.5em) {
+  .main-sections {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.aside {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  max-width: 130rem;
+}
+
+.aside-nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.aside-headings {
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.aside-para {
+  font-size: 1.8rem;
+}
+
+.aside-nav {
+  margin-top: 3rem;
+}
+
+.food {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 6rem;
+}
+
+.food-image-1, .food-image-2 {
+  width: 40rem;
+  height: 40rem;
+  margin-top: 3rem;
+}
+
+.food-hotel {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.food-hotel h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.food-hotel p {
+  font-size: 1.8rem;
+}
+/*# sourceMappingURL=styles.css.map */

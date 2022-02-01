@@ -1,0 +1,73 @@
+$main-background-color:#f3c5c5;
+$aside-bar-width:130rem;
+$aside-font-weight:500;
+$aside-font-size:1.8rem;
+@mixin food-image{
+    width: 40rem;
+    height: 40rem;
+    margin-top: 3rem;
+}
+@mixin food-hotel{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.main-sections{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: $main-background-color;
+
+   
+
+}
+ @media (max-width:37.5em){
+        .main-sections{
+            grid-template-columns: 1fr;
+        }
+    }
+.aside{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    max-width: $aside-bar-width;
+     
+    &-nav-link{
+        display: flex;
+        text-decoration: none;
+        color:black;
+        font-weight:$aside-font-weight;
+        font-size: $aside-font-size;
+    }
+    &-headings{
+        font-weight:700;
+        font-size:3rem;
+        margin:2rem 0;
+    }
+    &-para{
+        font-size: $aside-font-size;
+    }
+    &-nav{
+        margin-top: 3rem;
+    }
+}
+
+.food{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-gap: 6rem;
+    &-image-1,&-image-2{
+        @include food-image();
+    }
+    &-hotel{
+        @include food-hotel();
+        h1{
+            font-weight: 700;
+            font-size: 3rem;
+
+        }
+        p{
+            font-size: $aside-font-size;
+        }
+    }
+}
+

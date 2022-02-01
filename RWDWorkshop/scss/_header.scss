@@ -1,0 +1,40 @@
+$header-primary-color:#4C0027;
+$header-bachground-image: url(/images/header.jpg) ;
+$header-height:30rem;
+$header-font-size:large;
+.header{
+    display: grid;
+    grid-template-columns: 1fr ;
+   justify-content: center;
+    text-align: center;
+   @media all and (max-width: 100rem) {
+		&{
+            background-image:$header-bachground-image; 
+			width:100%;
+            background-size: cover;
+            background-position: center; 
+		}
+	}
+    
+    height: $header-height;
+    font-size: $header-font-size;
+    
+    &-zomato{
+        color: $header-primary-color;
+        text-decoration: none;
+    }
+    &-nav-link{
+       
+        color: $font-color;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 2rem;
+        
+    }
+    &-nav-list{
+        display: flex;
+        grid-gap: 3.2rem;
+    }
+
+
+}

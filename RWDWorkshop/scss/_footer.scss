@@ -1,0 +1,21 @@
+$footer-back-color:#faeee7;
+$footer-font:3rem;
+$footer-font-weight:700;
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3rem;
+    background:$footer-back-color;
+
+    &-company{
+        h1{
+            font-weight: $footer-font-weight;
+            font-size: $footer-font;
+            margin-top: 2rem;
+            text-decoration: underline;
+        }
+        p{
+            font-size: 1.8rem;
+        }
+    }
+}
